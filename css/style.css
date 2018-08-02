@@ -1,0 +1,96 @@
+@charset "UTF-8"; 
+@import 'https://fonts.googleapis.com/css?family=Abel';
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Abel';
+    font-size: 1.4rem;
+    line-height: 1.6;
+    letter-spacing: .1em;
+    color: #626262;
+    background-color: #fffff0;
+}
+
+.flexible-image img{
+   width: 100%;
+   max-height: 500px;
+   min-height: 250px;
+}
+
+#main {
+    text-align: center;
+}
+
+#main h1{
+    margin: 20px;
+    font-size: 3rem;
+}
+
+.text {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-flex: 1;
+            flex: 1;
+    margin: 10px 10px;
+    padding-bottom: 20px;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+    border: solid 2px skyblue;
+}
+
+.text h2{
+    color: #fff;
+    background-color: skyblue;
+    padding: 10px;
+    font-size: 2rem;
+}
+
+.text p{
+    padding: 20px;    
+}
+
+.box {
+    margin: 20px 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+@media(max-width: 768px){
+    .box{
+        flex-direction: column;
+    }
+}
+
+footer {
+    background-color: #ffffaa;
+    padding: 20px;
+    text-align: center;
+    height: auto;
+}
+
+footer h3{
+    padding: 10px;
+}
+
+a.btn {
+    display: inline-block;
+    width:160px;
+    padding: 0.7em;
+    text-decoration: none;
+    color: #fff;
+    background: skyblue;
+    border: 2px solid skyblue;
+    border-radius: 10px;
+    transition: .4s;
+}
+
+a.btn:hover {
+    color: skyblue;
+    background-color: transparent;
+}
+
